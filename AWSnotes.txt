@@ -1,0 +1,25 @@
+1. application needs a storage layer to store important documents - Amazon S3 
+Amazon S3 is a perfect storage layer for storing documents and other types of objects. Amazon S3 also has an option for versioning as shown below. Versioning is on the bucket level and can be used to recover prior versions of an object.
+2. Where to store sessions of users for e-commerse data: Dynamo Db, Elastic Load Balancing, ElasticCache.
+Amazon DynamoDB is a fast and flexible NoSQL database service for all applications that need consistent, single-digit millisecond latency at any scale. It is a fully managed cloud database and supports both document and key-value store models. Its flexible data model, reliable performance, and automatic scaling of throughput capacity makes it a great fit for mobile, web, gaming, ad tech, IoT, and many other applications.
+ElastiCache is a web service that makes it easy to set up, manage, and scale a distributed in-memory data store or cache environment in the cloud. It provides a high-performance, scalable, and cost-effective caching solution, while removing the complexity associated with deploying and managing a distributed cache environment.
+
+
+
+
+So Amazon's VPC lets you provision a logically isolated section of the Amazon Web services cloud where
+
+you can launch AWOS resources in a virtual network that you define.
+complete control. we can select our own Ip address ranges creation of subnet  and configuration of root tables and network gateways.
+
+But obviously one subset always equals one availability sign like say that over and over again in the.
+we can have more than 5 vpc in region.
+10.0.0.0/28  =  firstIP: 10.0.0.1 lastIP:10.0.0.14 = count 16 (Smallest IP range )
+10.0.0.0/24  =  firstIP: 10.0.0.1 lastIP:10.0.0.254 = count 256
+10.0.0.0/16  =  firstIP: 10.0.0.1 lastIP:10.0.255.254 = count 65,536 
+Only one internet gateways per VPC 
+differnece between default vpc vs custom vpc ? 
+there is no private subnet in default.
+
+
+VPC peering

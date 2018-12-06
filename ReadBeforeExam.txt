@@ -1,0 +1,68 @@
+﻿Hi Ajay,
+ 
+Below are few of the topics and Questions which I can recollect:
+Active Passive Failover routing with Latency based failover
+3-4 Questions were based on NAT gateway, but based on different scenarios and twisted little bit.
+Scenario based question for Type of Disk (General purpose, cold Hdd, Throughput or provisioned IOPs)
+Cloud front with OAI
+One question on CloudFront Geolocation
+2 Questions on ECS (You need to deploy the applications into microservices and Containers)
+2 questions were based on Amazon EFS
+Application Load balancer: Your application is using application load balancer. You need to allow only that traffic which are allowed by Application load balancer.  (Use the application LB Security group for the EC2)
+Basic questions on S3 for versioning and Life cycle policy
+Cloud front Signed urls
+Couple of questions on IAM roles
+Amazon Redshift: Dataware house and able to do queries: So, I chose Redshift
+Application is capturing the real-time geographical data and you need to store this in dataware house. Choose two services (I chose AWS Kinesis Firehose and Redshift)
+Fault tolerant and cost-efficient scenario: 3 AZs minimum 4 available (I chose 2 EC2 in each availability zone)
+ 
+
+
+
+
+
+Below are the mentioned topics which appeared in my exam:
+ 
+·         5 question were from NAT gateway & NAT instance. Choosing among them based upon cost.
+·         One was of active passive failover routing policy.
+·         3 question were from IAM policy.
+·         Scenario based question for Type of Disk (General purpose, cold Hdd, Throughput or provisioned IOPs)
+·         You are a solution arch of a company and you experience a heavy traffic from a specific Ip. How can u stop that Ip from accessing your n/w.  Answer applying NACL.
+·         Application is capturing the real-time geographical data and you need to store this in data ware house. Choose two services (I chose AWS Kinesis Fire hose and Redshift)
+·         Fault tolerant and cost-efficient scenario: 3 AZs minimum 4 available (I chose 2 EC2 in each availability zone)
+·         Complex scenario based on backing up of data in disaster recovery.
+·         S3 versioning & implementing lifecycle policy.
+·         2 question were from ECS.
+·         Encryption of EBS volume & Copying that encrypted volume to S3 during disaster recovery.
+ 
+ 
+ 
+Thanks
+Utkarsh.
+
+I was unsuccessful to clear the AWS – SA exam. I need to work on my understanding towards each services in depth.
+ 
+Please find the below questions which I can recollect while giving the exam. I believe we have received the same set @Anil and Utkarsh please suggest.
+·         You are a solution arch of a company and you experience a heavy traffic from a specific IP. How can u stop that IP from accessing your n/w.  Answer applying NACL to deny specific IP’s
+·         One question on failover with respect to low latency using Route53 – Answer active passive failover using latency policy.
+·         Fault tolerant and cost-efficient scenario: 2 AZs with minimum 4 available Ec2 instance  (I chose 4 EC2 in each availability zone)
+·         3 question were from ECS. – Micro services deployment –  ECS Orchestration – Docker images
+·         Application is capturing the real-time geographical data and you need to store this in data ware house. Choose two services (I chose AWS Kinesis Fire hose and Redshift)
+·         DynamoDB – offload the administration burden. Received around 8 Questions where DynamoDB was in option and looked feasible as a solution.
+·         Scenario based question for Type of Disk (General purpose, cold Hdd, Throughput or provisioned IOPs) from a large volume of Dataware house the data is required to store in EBS volume which one to choose.
+·         On-prem is facing some challenges in message broker and MQTT and they want to go with Cloud which option will help them to migrate to AWS ( option - SQS, SNS, AWS MQ, AWS SWF) – I selected SQS
+·         Data needs to be stored in large volume and needs to run with aggregation and visualization Choose 2 ( Redshift , Lambda, Kineses, DynamoDB , SQS) I choose Redshifts and Lambda
+·         Two option has API gateway with Lambda which I choose for server less architecture with Managed AWS service.
+·         Application is expecting a high peaks on Monday through Friday and on Saturday it needs to run batch processes – choose (Spot, on – demand – reserved – IA or reserved storage) I choose Spot
+·         Auto scaling default termination policy ( oldest launch configuration, closest to next billing hour, Old instance, randomly terminate) choose 1 – I selected with oldest launch configuration
+·         There is a requirement to store data in S3 and after a month the data it not accessed but it should be able to achieve data whenever required – I chose AWS lifecycle policy to store data in Glacier after one month.
+·         Application load balancer needs to restrict traffic – use Public IPS for ALB node, use security group of deny traffic to load balancer, use private IPs to restrict traffic on ALB ) I choose first option
+·         There was one question for SAAS product user wants to leverage all the features and the user wants to go with server less architecture  – (options : API gateway using Lambda, Cloudformation using Lambda, API gateway with DynamoBD) I choose first option   
+·         VPC – when to use Nat Gateway or Nat instance for private subnet to frequently communicate with internet – I choose Nat Gateway
+·         There is one question for fault tolerant solution which needs to span across 200 Miles for disaster recovery for RDS– Enable cross region replication , Enable multi - az deployment , cross region snapshot – I choose Enable cross region replication
+·         Also, there was one question on amazon RDS Aurora DB – I cannot recollect the actual content of the questions and the options as answers.
+ 
+Hardly there were 6 to 7 questions which could be answered easily. Considering Whiz Labs training for sample questions for each AWS services, I can conclude the difficulty level of each questions compared to WhizLabs  has really increased.
+ 
+Regards,
+Sudesh Salian
